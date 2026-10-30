@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodness Ejimofor | Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,sans-serif;background:#09090b;color:#f4f4f5;line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:min(1050px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(9,9,11,.88);backdrop-filter:blur(12px);border-bottom:1px solid #27272a}
+.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;letter-spacing:-1px}
+.logo span{color:#a78bfa}
+.nav-links{display:flex;gap:25px;color:#a1a1aa;font-size:14px}
+.nav-links a:hover{color:#fff}
+.hero{padding:105px 0 85px;background:radial-gradient(circle at 80% 20%,#312e8155 0,transparent 32%),radial-gradient(circle at 10% 40%,#581c8750 0,transparent 30%)}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #3f3f46;border-radius:999px;color:#c4b5fd;font-size:13px;margin-bottom:22px;background:#18181b}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.03;letter-spacing:-4px;max-width:850px}
+.hero h1 span{color:#a78bfa}
+.hero p{max-width:650px;color:#a1a1aa;font-size:18px;margin:24px 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 19px;border-radius:10px;font-weight:600;font-size:14px;border:1px solid #3f3f46}
+.btn.primary{background:#a78bfa;color:#09090b;border-color:#a78bfa}
+.btn:hover{transform:translateY(-1px)}
+section{padding:75px 0}
+.section-label{color:#a78bfa;font-size:13px;text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:9px}
+h2{font-size:34px;letter-spacing:-1.5px;margin-bottom:13px}
+.section-intro{color:#a1a1aa;max-width:650px;margin-bottom:30px}
+.card{background:#111113;border:1px solid #27272a;border-radius:18px;padding:28px}
+.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:20px}
+.about-text p{color:#a1a1aa}
+.stats{display:grid;gap:12px}
+.stat{padding:18px;border-radius:14px;background:#18181b;border:1px solid #27272a}
+.stat strong{display:block;font-size:25px;color:#c4b5fd}
+.stat small{color:#a1a1aa}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{padding:10px 15px;border-radius:999px;background:#18181b;border:1px solid #27272a;color:#d4d4d8}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{position:relative;overflow:hidden}
+.project:before{content:"";display:block;height:5px;background:linear-gradient(90deg,#a78bfa,#6366f1);margin:-28px -28px 24px}
+.project h3{font-size:21px;margin-bottom:8px}
+.project p{color:#a1a1aa}
+.project .tag{display:inline-block;margin-top:18px;font-size:12px;color:#c4b5fd}
+.contact{background:linear-gradient(135deg,#171327,#111113);text-align:center}
+.contact p{color:#a1a1aa;max-width:600px;margin:0 auto 25px}
+footer{border-top:1px solid #27272a;padding:25px 0;color:#71717a;text-align:center;font-size:13px}
+@media(max-width:700px){
+.nav-links{display:none}
+.hero{padding:75px 0 65px}
+.hero h1{letter-spacing:-2px}
+.about-grid,.projects{grid-template-columns:1fr}
+section{padding:55px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">Goodness<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    
+    <h1>Hi, I'm <span>Goodness.</span><br>I'm building for the web.</h1>
+    <p>I build practical digital projects with web technologies, Python and Django. I enjoy creating simple, useful and responsive digital experiences.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View My Work</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 — About</div>
+    <h2>A little about me</h2>
+    <div class="about-grid">
+      <div class="card about-text">
+        <p>I am Goodness Ejimofor, focused on technology and web development. I enjoy building practical projects and creating simple, useful digital experiences.</p>
+        <br>
+        <p>My work includes front-end technologies as well as Python, Django and SQL. I’m interested in creating useful digital products and gaining real-world experience.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>7+</strong><small>Core technologies</small></div>
+        <div class="stat"><strong>2026</strong><small>Current focus</small></div>
+        <div class="stat"><strong>100%</strong><small>Project focused</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-label">02 — Skills</div>
+    <h2>Skills</h2>
+    <p class="section-intro">These are the technologies and areas I work with across web development and practical projects.</p>
+    <div class="skills">
+      <div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div>
+      <div class="skill">Python</div><div class="skill">Django</div><div class="skill">SQL</div>
+      <div class="skill">Web Development</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-label">03 — Projects</div>
+    <h2>Things I've worked on</h2>
+    <p class="section-intro">A few examples of my projects and practical work.</p>
+    <div class="projects">
+      <div class="card project">
+        <h3>Eat With Us</h3>
+        <p>A clean, responsive restaurant website designed around a simple food-ordering experience.</p>
+        <span class="tag">HTML · CSS · Responsive Design</span>
+        <br><a class="btn primary" style="display:inline-block;margin-top:16px" href="#" onclick="alert('Upload the Eat With Us site to GitHub Pages and replace this button with its live URL.');return false;">View Project</a>
+      </div>
+      <div class="card project">
+        <h3>Learning Projects</h3>
+        <p>Small projects created using Python, web development and problem-solving skills.</p>
+        <span class="tag">Python · Web Development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="card contact">
+      <div class="section-label">04 — Contact</div>
+      <h2>Let's connect</h2>
+      <p>I'm open to learning opportunities, useful feedback and connections with people in technology.</p>
+      <div class="buttons" style="justify-content:center">
+        <a class="btn primary" href="https://wa.me/2349136020455?text=Hello%20Goodness%2C%20I%20found%20your%20portfolio." target="_blank">WhatsApp Me</a>
+        <a class="btn" href="https://github.com/GoodnessEjimofor" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Goodness Ejimofor · Built with purpose</footer>
+</body>
+</html>
